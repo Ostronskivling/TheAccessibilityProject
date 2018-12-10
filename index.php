@@ -18,9 +18,9 @@
 
             $htmlKod1 = file_get_html('https://www.aftonbladet.se/nyheter/a/J1eymR/forskarupprop-mot-kinesiska-omskolningslager');
             foreach ($htmlKod1->find('.c-Cz1') as $class) {
-                $summering = $class->text();
+                echo $class->text();
             }  
+            echo '<p style="background-color:powderblue;">' . $class . '</p>'
         ?>
-        <p> <input type="hidden" name="type" value="<?php echo $summering; ?>"> </p>
     </body>
 </html>
