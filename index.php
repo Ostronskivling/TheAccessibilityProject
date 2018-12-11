@@ -20,7 +20,11 @@
             foreach ($htmlKod1->find('.c-Cz1') as $class) {
                 //echo $class->text();
             }  
-            echo "<p id=Summering> . $class . </p>";
-        ?>
+            //echo "<p id=Summering> . $class . </p>";
+            ?>
+            <p id="Summering"> 
+                hmmmmmmmm
+                <?php print $class; ?> 
+            </p>
     </body>
 </html>
