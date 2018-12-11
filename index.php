@@ -21,10 +21,8 @@
                 //echo $class->text();
             }  
             //echo "<p id=Summering> . $class . </p>";
+            
+            print "<p id=Summering> hmmmmmmmm $class; </p>"
             ?>
-            <p id="Summering"> 
-                hmmmmmmmm
-                <?php print $class; ?> 
-            </p>
     </body>
 </html>
