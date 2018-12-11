@@ -20,7 +20,7 @@
             foreach ($htmlKod1->find('.c-Cz1') as $class) {
                 //echo $class->text();
             }  
-            echo "<p id=Summering><font color=blue> . $class . </font></p>";
+            echo "<p id=Summering> . $class . </p>";
         ?>
     </body>
 </html>
