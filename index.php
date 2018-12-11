@@ -15,12 +15,12 @@
             foreach ($htmlKod1->find('._11S-G') as $class) {
                 echo $class->text();
             }  
+            echo "<p> . $class . </p>";
 
-            $htmlKod1 = file_get_html('https://www.aftonbladet.se/nyheter/a/J1eymR/forskarupprop-mot-kinesiska-omskolningslager');
             foreach ($htmlKod1->find('.c-Cz1') as $class) {
-                echo $class->text();
+                //echo $class->text();
             }  
-            echo '<p style="background-color:powderblue;">' . $class . '</p>'
+            echo "<p id=Summering><font color=blue> . $class . </font></p>";
         ?>
     </body>
 </html>
