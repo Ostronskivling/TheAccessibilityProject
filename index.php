@@ -22,7 +22,14 @@
             }  
             //echo "<p id=Summering> . $class . </p>";
             
-            print "<p id=Summering> hmmmmmmmm $class; </p>"
+            print "<p id='Summering'> hmmmmmmmm  <font color=black> " . $class . "</p>";
+
+            /*$Color = "red";
+            $Text = "This text is red";
+        
+        
+            echo '<div style="Color:'.$Color.'">'.$Text.'</div>';*/
             ?>
+            <p id="Summering"> <?=$class;?></p>
     </body>
 </html>
