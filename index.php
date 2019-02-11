@@ -12,24 +12,14 @@
     <body>
         <?php
             $htmlKod1 = file_get_html('https://www.aftonbladet.se/nyheter/a/J1eymR/forskarupprop-mot-kinesiska-omskolningslager');
-            foreach ($htmlKod1->find('._11S-G') as $class) {
-                echo $class->text();
+            foreach ($htmlKod1->find('._11S-G') as $rubrik){
+                echo $rubrik;
             }  
-            echo "<p> . $class . </p>";
-
-            foreach ($htmlKod1->find('.c-Cz1') as $class) {
-                //echo $class->text();
+            foreach ($htmlKod1->find('.c-Cz1') as $underrubrik) {
+                echo $underrubrik;
             }  
-            //echo "<p id=Summering> . $class . </p>";
-            
-            print "<p id='Summering'> hmmmmmmmm  <font color=black> " . $class . "</p>";
-
-            /*$Color = "red";
-            $Text = "This text is red";
-        
-        
-            echo '<div style="Color:'.$Color.'">'.$Text.'</div>';*/
-            ?>
-            <p id="Summering"> <?=$class;?></p>
+        ?>
+        <h1 class="Summering"> <?=$rubrik->test();?> </p>
+        <p class="Summering"> <?=$underrubrik->text();?> </p>
     </body>
 </html>
